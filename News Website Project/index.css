@@ -1,0 +1,158 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: white;
+}
+
+.navbar{
+    background-color: midnightblue;
+    display: flex;
+    padding: 0px 20px;
+    height:15vh;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+}
+
+.category a{
+    color:white;
+    padding: 14px 20px;
+    margin-top: 2.5%;
+    margin-left: 0;
+}
+
+.category a:hover{
+    background-color: rgb(65, 85, 238);
+}
+
+.category-item{
+    text-align: left;
+    justify-content: center;
+    padding-left: 30px;
+    font-size: 30px;
+    color: color;
+    transition: 0.3s;
+}
+
+.category-item.active{
+    color: aquamarine;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 300px;
+}
+
+.news{
+    height: 35px;
+    width:200px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+
+.search-button{
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+    height: 30px;
+}
+
+.search-button:hover{
+    background-color:rgb(35, 182, 255);
+}
+
+.card-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px;  
+    width: 80%; 
+    max-width: 1200px;  
+    padding: 20px; 
+    border-color: black;
+    margin:40px auto;
+} 
+ 
+.card { 
+    background-color: white; 
+    padding: 20px; 
+    border-radius: 0; 
+    border-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    transition: transform 0.3s ease; 
+    overflow: hidden;
+} 
+ 
+.card:hover { 
+    transform: translateY(-10px);  
+}
+
+
+.card p { 
+    font-size: 16px; 
+color:black; 
+}
+
+.footer{
+    margin-top: 50px;
+    color: white;
+}
+
+.footer-content{
+    background-color: rgb(21,21,109);
+    height: 200px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 10px;
+}
+
+.footer a{
+    color: white;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a:hover{
+    text-decoration: dotted;
+    background-color: rgb(65, 85, 238);    
+}
+
+.video-container video{
+    width: 100%;
+    height: auto;
+    max-height: 480px;
+    object-fit: cover;
+    display: block;
+}
+
+.panel{
+    background-color: rgb(10, 10, 81);
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-to-top{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.back-to-top:hover{
+    text-decoration: underline;
+}
+
+html{
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="top">
+    <section class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag
+        </video>
+    </section>
+    <nav>
+        <div class="navbar">
+            <div class="category">
+                
+                <a class="hover-link category-item" id="home" onclick="reload()">Home</a>
+
+                <a class="hover-link category-item" id="ipl" onclick="onCategoryItemClick('ipl')">IPL</a>
+
+                <a class="hover-link category-item" id="sports" onclick="onCategoryItemClick('sports')">Sports</a>
+
+                <a class="hover-link category-item" id="global" onclick="onCategoryItemClick('global')">Global</a>
+                
+                <a class="hover-link category-item" id="business" onclick="onCategoryItemClick('business')">Business</a>
+
+                <a class="hover-link category-item" id="politics" onclick="onCategoryItemClick('politics')">Politics</a>
+
+                <a class="hover-link category-item" id="tech" onclick="onCategoryItemClick('tech')">Tech</a>
+            </div>
+
+            <div class="search">
+                <input type="text" class="news" id="search-text">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="card-grid" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+
+        <!-- card-1 -->
+
+        <div class="card"> 
+            <div class="card-header">
+                <img src="sample.jpeg"style="width: 100%; height: 200px; object-fit:cover;">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title">Title</h3>
+                <h6 id="news-source">Date</h6>
+                <p class="news-desc" id="news-desc">
+                    Israel-Gaza Conflict: On April 3, 2025, an Israeli attack  on a school in Gaza resulted in the deaths of 27 people who had taken shelter there, according to Gaza's health ministry.  
+                </p> 
+            </div>
+        </div> 
+        
+    </template>
+
+    
+
+    <footer class="footer">
+        <div class="panel">
+            <a href="#top" class="back-to-top">Back to Top</a>
+        </div>
+        <div class="footer-content">
+            <p>&cpoy; 2025 My News Channel. ALl Rights Reserved.</p>
+            <div class="footer-content1">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+    <script src="api1.js"></script>
+</body>
+</html>
